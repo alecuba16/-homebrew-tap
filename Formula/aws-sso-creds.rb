@@ -5,20 +5,20 @@
 class AwsSsoCreds < Formula
   desc "Get AWS SSO temporary creds from an SSO profile. Includes set as the default profile inside the credentials and login flag"
   homepage "https://www.linkedin.com/in/alejandro-blanco-m-b847244b/"
-  version "1.2.2"
+  version "1.2.3"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/alecuba16/aws-sso-creds-default-login/releases/download/v1.2.2/aws-sso-creds-v1.2.2-darwin-arm64.tar.gz"
-      sha256 "d713b570c87fe4b457973b41fff3e2a11c44be81d0a9240fc3ee0b87276784ad"
+      url "https://github.com/alecuba16/aws-sso-creds-default-login/releases/download/v1.2.3/aws-sso-creds-v1.2.3-darwin-arm64.tar.gz"
+      sha256 "28025cb5ae81d94b4644a074756afcf44192593964d2f4b5ab37b1699272166e"
 
       def install
         bin.install "aws-sso-creds"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/alecuba16/aws-sso-creds-default-login/releases/download/v1.2.2/aws-sso-creds-v1.2.2-darwin-amd64.tar.gz"
-      sha256 "ca6f12c6f2b384478e085cdedc71e81d93f9674fd9e49e17b28707229fa333d0"
+      url "https://github.com/alecuba16/aws-sso-creds-default-login/releases/download/v1.2.3/aws-sso-creds-v1.2.3-darwin-amd64.tar.gz"
+      sha256 "adb60daac97601e4ca5031712b3ce8c3c1ee29b0f9e85d7529db523d7538b6e1"
 
       def install
         bin.install "aws-sso-creds"
@@ -28,16 +28,16 @@ class AwsSsoCreds < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/alecuba16/aws-sso-creds-default-login/releases/download/v1.2.2/aws-sso-creds-v1.2.2-linux-arm64.tar.gz"
-      sha256 "64d7879f1ce48a38e1648563faa58ba34542eba387ad639b5809b7ebbc527f53"
+      url "https://github.com/alecuba16/aws-sso-creds-default-login/releases/download/v1.2.3/aws-sso-creds-v1.2.3-linux-arm64.tar.gz"
+      sha256 "c86a6acbf589700efa4b361f155ea5d4500bb07b585967d567b89adddfcd2571"
 
       def install
         bin.install "aws-sso-creds"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/alecuba16/aws-sso-creds-default-login/releases/download/v1.2.2/aws-sso-creds-v1.2.2-linux-amd64.tar.gz"
-      sha256 "8fa92ffe301200ca22a639dfc902235986c50d31effc59ff7a30877312a106c1"
+      url "https://github.com/alecuba16/aws-sso-creds-default-login/releases/download/v1.2.3/aws-sso-creds-v1.2.3-linux-amd64.tar.gz"
+      sha256 "6a2026a81e84dd0f50b02a52b36d56e23e5064979e63f085464f0a8c6d0ae31d"
 
       def install
         bin.install "aws-sso-creds"
