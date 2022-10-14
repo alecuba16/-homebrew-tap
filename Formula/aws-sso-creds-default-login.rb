@@ -13,7 +13,7 @@ class AwsSsoCreds < Formula
       sha256 "93215f70bedd7013ee8e275ba07b2c4a3da33bbda3cd428de38f756c5d7d9294"
 
       def install
-        bin.install "aws-sso-creds"
+        bin.install "aws-sso-creds-default-login"
       end
     end
     if Hardware::CPU.arm?
@@ -21,7 +21,7 @@ class AwsSsoCreds < Formula
       sha256 "0fd07cd93df2f66dca3e4ae59afb5670b97e5f5e7f1ed4116dc49762e5962892"
 
       def install
-        bin.install "aws-sso-creds"
+        bin.install "aws-sso-creds-default-login"
       end
     end
   end
@@ -32,7 +32,7 @@ class AwsSsoCreds < Formula
       sha256 "e64b390ceb94c4a6f487cf0d75da1f94c70677793110d5227fb3e95cc159379e"
 
       def install
-        bin.install "aws-sso-creds"
+        bin.install "aws-sso-creds-default-login"
       end
     end
     if Hardware::CPU.intel?
@@ -40,7 +40,7 @@ class AwsSsoCreds < Formula
       sha256 "b271fe57c5fbb8abfc05f6cf5fb37d6707fc2e0ba3badc5588c69338463cc08b"
 
       def install
-        bin.install "aws-sso-creds"
+        bin.install "aws-sso-creds-default-login"
       end
     end
   end
